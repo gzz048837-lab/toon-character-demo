@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>她来了 · 三渲二角色交互</title><link rel="icon" href="data:,"/>  <script type="module" crossorigin src="./assets/tripo-Cl2oHtpy.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/tripo-C5klNfbu.css">
+</head>
+<body><main class="studio tripo-studio">
+<div class="halo" aria-hidden="true"></div><div id="stage" aria-label="你的三维角色，拖动旋转，滚轮缩放"></div>
+<header class="intro"><a class="wordmark" href="./"><span class="mark">✳</span> Character study</a><h1>她来了。</h1><p>从一张设定图，<br/>走到你面前。</p><div class="live-state"><span></span><span id="state-label" role="status">正在加载你的角色</span></div></header>
+<aside class="panel" aria-label="角色控制"><div class="panel-heading"><h2>试试她的动作</h2><span>↗</span></div>
+<button class="wave" id="wave" disabled><span>✋</span> 向你挥手 <kbd>1</kbd></button>
+<div class="expression-group" role="group" aria-label="姿态"><button class="expression" id="nod" disabled><span>⌣</span>点头</button><button class="expression" id="rest" disabled aria-pressed="false"><span>⌘</span>原始姿态</button></div>
+<div class="options"><label class="switch-row"><span>转头跟随</span><input id="follow" type="checkbox" role="switch" checked/><span class="switch"></span></label><label class="switch-row"><span>自然待机</span><input id="alive" type="checkbox" role="switch" checked/><span class="switch"></span></label><label class="switch-row"><span>三渲二明暗</span><input id="toon" type="checkbox" role="switch" checked/><span class="switch"></span></label><label class="switch-row"><span>查看骨骼</span><input id="skeleton" type="checkbox" role="switch"/><span class="switch"></span></label><label class="light-control" for="light"><span>光照方向</span><span>☀</span><input id="light" type="range" min="-130" max="130" value="-30" aria-label="光照方向"/></label></div>
+<p class="tip">可以转头、点头和挥手。<br/>眨眼与口型尚未制作。</p></aside>
+<div class="view-bar" role="group" aria-label="镜头景别"><button data-view="portrait" class="selected" aria-pressed="true">半身</button><button data-view="full" aria-pressed="false">全身</button><button data-view="face" aria-pressed="false">面部</button><span class="separator"></span><button id="reset" aria-label="恢复初始镜头" title="恢复初始镜头">↺</button><button id="pause" aria-label="暂停动作" aria-pressed="false" title="暂停动作">Ⅱ</button></div>
+<div id="reaction" class="reaction" aria-live="polite"></div><footer><span class="instructions">拖动旋转 <span>·</span> 滚轮缩放 <span>·</span> 点击点头</span><span>三渲二角色交互演示</span></footer>
+<div class="loading" id="loading" role="status"><div class="loading-orbit">✳</div><p id="loading-text">正在加载角色</p><div class="progress"><i id="progress"></i></div><button id="retry" hidden>重新加载</button></div>
+</main></body></html>
